@@ -18,7 +18,7 @@ use App\Http\Controllers\Api\Books\BooksController;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
-
-Route::group(['middleware' => 'auth.basic'], function () {
-    Route::apiResource('books', BooksController::class);
-});
+Route::apiResource('books', BooksController::class);
+// Route::group(['middleware' => 'auth.basic'], function () {
+    
+// });
