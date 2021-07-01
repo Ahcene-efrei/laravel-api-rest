@@ -14,7 +14,7 @@
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^8.12",
         "laravel/tinker": "^2.0",
-        "fzaninotto/faker": "^1.9.1",
+        "fzaninotto/faker": "^1.9.1"
     },
     "require-dev": {
         "facade/ignition": "^2.3.6",
