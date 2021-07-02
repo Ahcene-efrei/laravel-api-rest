@@ -19,7 +19,40 @@ class BooksController extends Controller
      *      tags={"Tests"},
 
      *      summary="Get List Of Books",
-     *      description="Returns all Books. The country_slug variable is used for country specific data",
+     *      description="Returns all Books.",
+     *      @OA\Response(
+     *          response=200,
+     *          description="Successful operation",
+     *          @OA\MediaType(
+     *           mediaType="application/json",
+     *      )
+     *      ),
+     *      @OA\Response(
+     *          response=401,
+     *          description="Unauthenticated",
+     *      ),
+     *      @OA\Response(
+     *          response=403,
+     *          description="Forbidden"
+     *      ),
+     * @OA\Response(
+     *      response=400,
+     *      description="Bad Request"
+     *   ),
+     * @OA\Response(
+     *      response=404,
+     *      description="not found"
+     *   ),
+     *  )
+     * 
+     * 
+     * @OA\Get(
+     *      path="/books/:id",
+     *      operationId="show",
+     *      tags={"Tests"},
+
+     *      summary="Get List Of Books",
+     *      description="return specific book by id.",
      *      @OA\Response(
      *          response=200,
      *          description="Successful operation",
