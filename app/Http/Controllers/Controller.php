@@ -12,7 +12,7 @@ class Controller extends BaseController
     /**
      * @OA\Info(
      *      version="1.0.0",
-     *      title="Api Bookstore Documentation",
+     *      title="Api Library Documentation",
      *      description="Api permettant d'acceder aux information sur les livres",
      *      @OA\Contact(
      *          email="admin@admin.com"

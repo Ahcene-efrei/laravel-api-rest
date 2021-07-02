@@ -77,6 +77,70 @@ class BooksController extends Controller
      *      description="not found"
      *   ),
      *  )
+     * 
+     * @OA\Post(
+     *      path="/books",
+     *      operationId="show",
+     *      tags={"Tests"},
+
+     *      summary="Add new book.",
+     *      description="Add new book.",
+     *      @OA\Response(
+     *          response=200,
+     *          description="Successful operation",
+     *          @OA\MediaType(
+     *           mediaType="application/json",
+     *      )
+     *      ),
+     *      @OA\Response(
+     *          response=401,
+     *          description="Unauthenticated",
+     *      ),
+     *      @OA\Response(
+     *          response=403,
+     *          description="Forbidden"
+     *      ),
+     * @OA\Response(
+     *      response=400,
+     *      description="Bad Request"
+     *   ),
+     * @OA\Response(
+     *      response=404,
+     *      description="not found"
+     *   ),
+     *  )
+     * 
+     * @OA\Delete(
+     *      path="/books/:id",
+     *      operationId="show",
+     *      tags={"Tests"},
+
+     *      summary="Modify a specific book.",
+     *      description="Modify a specific book.",
+     *      @OA\Response(
+     *          response=200,
+     *          description="Successful operation",
+     *          @OA\MediaType(
+     *           mediaType="application/json",
+     *      )
+     *      ),
+     *      @OA\Response(
+     *          response=401,
+     *          description="Unauthenticated",
+     *      ),
+     *      @OA\Response(
+     *          response=403,
+     *          description="Forbidden"
+     *      ),
+     * @OA\Response(
+     *      response=400,
+     *      description="Bad Request"
+     *   ),
+     * @OA\Response(
+     *      response=404,
+     *      description="not found"
+     *   ),
+     *  )
      */
 
     /**
